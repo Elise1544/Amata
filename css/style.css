@@ -211,19 +211,23 @@ input[type="radio"].visually-hidden {
 }
 
 .things__list {
+  display: inline-block;
   margin: 40px auto;
   padding: 20px;
   width: 80%;
+  overflow: auto;
 
   background-color: rgba(256, 256, 256, 0.7);
 }
 
 .items td {
   padding: 15px;
+  width: 25%;
 }
 
 .items__name {
   position: relative;
+  width: 50%;
   text-align: left;
   cursor: pointer;
 }
