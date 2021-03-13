@@ -1,0 +1,286 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.body {
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 400;
+
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+  min-height: 405px;
+  padding: 350px 10% 0 10%;
+
+  background-image: url(https://cdn.amtsft.com/12OS07Z9U-eGvckopjKaIxwuR.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.header ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-width: 300px;
+  height: min-content;
+  margin-top: 0;
+  padding: 0 10px;
+  list-style: none;
+
+  background-color: #FFC618;
+  border-radius: 15px;
+}
+
+.header a {
+  display: inline-block;
+}
+
+.form-header {
+  position: relative;
+  height: min-content;
+  padding: 0 5px;
+
+  background-color: #FFC618;
+  border-radius: 15px;
+}
+
+.form-header input {
+  margin: 10px;
+}
+
+.form-header button {
+  position: absolute;
+  background-color: transparent;
+  background-image: url(../img/search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 21px;
+  height: 21px;
+  top: 11px;
+  right: 15px;
+  border: none;
+}
+
+.language__button {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.language {
+  position: relative;
+  display: inline-block;
+  min-width: 75px;
+  padding: 0 10px;
+  background-color: #FFC618;
+  border-radius: 15px;
+}
+
+.language__content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 140px;
+}
+
+.language__button {
+  background-image: url("http://icons.iconarchive.com/icons/custom-icon-design/flag-3/16/Russia-Flag-icon.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 25px;
+  width: 40px;
+}
+
+.language__button::after {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-16.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+  height: 16px;
+  position: absolute;
+  right: 0;
+  top: 11px;
+  width: 16px;
+}
+
+.language__content a:first-child {
+  background-image: url("http://icons.iconarchive.com/icons/custom-icon-design/flag-3/16/Russia-Flag-icon.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.language__content a:last-child {
+  background-image: url("../img/flag-velikobritanii.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.language__content a {
+  color: black;
+  padding: 2px 0 2px 25px;
+  text-decoration: none;
+  display: block;
+}
+
+.language__content a:hover {
+  background-color: #f1f1f1;
+}
+
+.language:hover .language__content {
+  display: block;
+}
+
+.header__nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__nav li {
+  margin: 10px 20px;
+}
+
+.main {
+  padding-bottom: 30px;
+  background-image: url(https://cdn.amtsft.com/2QRslOZp1PNETutL3cUK0F97o.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.main h1 {
+  margin-top: 0;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.form-main select {
+  font-size: 22px;
+}
+
+.form-main button {
+  font-size: 22px;
+  padding: 0 10px;
+  background-color: #FFC618;
+  border-radius: 15px;
+}
+
+.things {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 24px;
+}
+
+.things__list {
+  margin: 40px auto;
+  padding: 20px;
+  width: 80%;
+
+  background-color: rgba(256, 256, 256, 0.7);
+}
+
+.items td {
+  padding: 15px;
+}
+
+.items__name {
+  position: relative;
+  text-align: left;
+  cursor: pointer;
+}
+
+.name {
+  text-align: center;
+}
+
+.items__name svg {
+  margin-right: 20px;
+}
+
+.things p {
+  width: min-content;
+  min-width: 15%;
+  height: min-content;
+  margin: 0 auto;
+
+  padding: 0 10px;
+  background-color: #FFC618;
+  border-radius: 15px;
+}
+
+.forward a {
+  margin-left: 15px;
+}
+
+.modal {
+  display: none;
+}
+
+.modal--active {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 250px;
+  min-height: 50px;
+  height: min-content;
+  top: 0;
+  left: 100px;
+  padding: 10px;
+
+  background-color: #FFC618;
+  border: 1px solid #000000;
+
+  font-size: 16px;
+  text-align: left;
+}
+
+.modal--active h3 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.modal--active p {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: transparent;
+}
